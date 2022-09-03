@@ -40,7 +40,6 @@ const loadCard =async(id) =>{
    }   
 }
 
-
 const displayCard =(cards) =>{
     const cardSection = document.getElementById('card-section');
     cardSection.textContent =""
