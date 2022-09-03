@@ -74,7 +74,301 @@
       <div class="mt-6 border-b-2 border-b-red-600 w-11/12 mx-auto"></div>
     </header>
     <main>
-     
+      <!-- category  section start  -->
+      <section class="container mx-auto mt-5 rounded-md">
+        <ul
+          id="catagory-container"
+          class="
+            menu menu-horizontal
+            bg-gray-100
+            text-black
+            rounded-box
+            grid grid-cols-3
+            lg:grid-cols-8
+            justify-between
+          "
+        >
+          <li class="font-semibold">
+            <a onclick="loadCard(01)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(02)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(03)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(04)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(05)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(06)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(07)"></a>
+          </li>
+          <li class="font-semibold">
+            <a onclick="loadCard(08)"></a>
+          </li>
+        </ul>
+      </section>
+      <!-- founded msg  -->
+      <div
+        id="founded-msg"
+        class="
+          w-full
+          container
+          mx-auto
+          bg-white
+          text-black text-primary-content
+          mb-5
+          shadow-md
+          rounded-md
+          mt-5
+        "
+      >
+        <div class="p-5 items-center">
+          <h2 class="card-title">
+            <span id="founded-text">8</span> items found
+          </h2>
+        </div>
+      </div>
+
+      <!-- Sort By View  section  -->
+      <section
+        class="container w-9/12 lg:w-full mx-auto lg:flex justify-between mt-5"
+      >
+        <div class="flex items-center">
+          <div>
+            <h1 class="font-semibold text-black mr-5">Sort By View:</h1>
+          </div>
+          <div>
+            <select class="select w-full bg-white text-black max-w-xs">
+              <option disabled="" selected="">default</option>
+              <option>default-1</option>
+              <option>default-2</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="mr-5 bg-red-600 p-2 text-white font-semibold rounded-md">
+            <h1>Today's Pick</h1>
+          </div>
+          <div class="border-2 border-red-500 text-black rounded-md p-1">
+            <h1>Trending</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- speener  -->
+      <section id="speener-container" class="container mx-auto hidden">
+        <progress class="progress w-full"></progress>
+      </section>
+
+      <!-- card section  -->
+
+      <section id="card-section" class="container mx-auto mt-10">
+        <div
+          class="
+            card
+            lg:card-side
+            bg-gray-100
+            shadow-xl
+            lg:p-4
+            mb-5
+            w-11/12
+            lg:w-full
+            mx-auto
+          "
+        >
+          <figure class="lg:w-1/4">
+            <img
+              src="https://i.ibb.co/HXC719r/unsplash-Eh-Tc-C9s-YXsw-19.png"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body lg:w-3/4 text-black">
+            <h2 class="card-title">
+              Joe Biden announces $3 billion in Ukraine weapons aid
+            </h2>
+            <p>
+              WASHINGTON: President Joe Biden announced nearly $3 billion in
+              military aid to Kyiv on Wednesday -- the biggest US package so far
+              -- to mark Ukraine's independence day, six months after Russia
+              invaded the country. The package aims to fortify Ukraine's
+              military over the coming two years by committing the production
+              and... read<br />full<br />story
+            </p>
+            <div class="card-actions justify-between items-center">
+              <div class="flex">
+                <div class="mr-3">
+                  <img
+                    class="w-[40px] rounded-full"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">system</h4>
+                  <h5>2022-08-24 23:15:00</h5>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div>
+                  <img src="img/icons8-eye-24.png" alt="" />
+                </div>
+                <div class="flex ml-3 items-center">
+                  <h1><span>980</span> M</h1>
+                </div>
+              </div>
+
+              <div class="text-yellow-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="card-actions justify-end">
+                <label
+                  for="my-modal-4"
+                  class="btn modal-button"
+                  onclick="modal('11468ed61aee84de492a8b04158a22f0')"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            card
+            lg:card-side
+            bg-gray-100
+            shadow-xl
+            lg:p-4
+            mb-5
+            w-11/12
+            lg:w-full
+            mx-auto
+          "
+        >
+          <figure class="lg:w-1/4">
+            <img
+              src="https://i.ibb.co/HXC719r/unsplash-Eh-Tc-C9s-YXsw-19.png"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body lg:w-3/4 text-black">
+            <h2 class="card-title">
+              Zelensky says he had ‘great conversation' with Biden, discussed
+              Kiev's further steps
+            </h2>
+            <p>
+              KIEV, August 25. /TASS/. Ukrainian President Vladimir Zelensky
+              said he had a great phone conversation with his US counterpart Joe
+              Biden and discussed with him Ukraine's further actions on
+              Thursday. Had a great conversation with @POTUS. Thanked for the
+              unwavering U.S. support for Ukrainian people - security and
+              financial, he wrote on Twitter. We discussed Ukraine's further
+              steps, Zelen .....
+            </p>
+            <div class="card-actions justify-between items-center">
+              <div class="flex">
+                <div class="mr-3">
+                  <img
+                    class="w-[40px] rounded-full"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">system</h4>
+                  <h5>2022-08-25 18:45:00</h5>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div>
+                  <img src="img/icons8-eye-24.png" alt="" />
+                </div>
+                <div class="flex ml-3 items-center">
+                  <h1><span>798</span> M</h1>
+                </div>
+              </div>
+
+              <div class="text-yellow-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="card-actions justify-end">
+                <label
+                  for="my-modal-4"
+                  class="btn modal-button"
+                  onclick="modal('374df11ae3d9b8b9ce21f4dc53f59b85')"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            card
+            lg:card-side
+            bg-gray-100
+            shadow-xl
+            lg:p-4
+            mb-5
+            w-11/12
+            lg:w-full
+            mx-auto
+          "
+        >
+          <figure class="lg:w-1/4">
+            <img
+              src="https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body lg:w-3/4 text-black">
+            <h2 class="card-title">
+              Biden Pledges Nearly $3 Billion To Ukraine In Largest U.S.
+              Military Aid Package Yet
+            </h2>
+            <p>
+              Wednesday, August 24, 2022 | Tag Cloud Tags: Biden, EU, Euro,
+              Europe, Joe Biden, Military, News, Russia, Security, UK, Ukraine,
+              United States, Worthy News (Worthy News) – U.S. President Joe
+              Biden has announced nearly $3 billion in new U.S. military aid for
+              Kyiv as Ukraine marked its independence day six months after
+              Russia invaded the country.'The United States of America is
+              committed to supportin .....
+            </p>
+            <div class="card-actions justify-between items-center">
+              <div class="flex">
+                <div class="mr-3">
+                  <img
+                    class="w-[40px] rounded-full"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl">Jimmy Dane</h4>
+                  <h5>2022-08-24 17:27:34</h5>
+                </div>
+              </div>
+
+            
     <script src="app.js"></script>
   </body>
 </html>
