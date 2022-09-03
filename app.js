@@ -10,8 +10,6 @@ const loadCategory =async() =>{
     console.log(error);
    }   
 }
-
-
 const displayCategory= async (data)=>{
     const categoryContainer =document.getElementById('catagory-container');
     data.forEach(category => {
@@ -25,7 +23,6 @@ const displayCategory= async (data)=>{
         
     });
 }
-
 // card section 
 const loadCard =async(id) =>{
 
@@ -39,28 +36,20 @@ const loadCard =async(id) =>{
     console.log(error);
    }   
 }
-
 const displayCard =(cards) =>{
     const cardSection = document.getElementById('card-section');
     cardSection.textContent =""
     // founded msg 
     const foundedMessege = document.getElementById('founded-msg');
     foundedMessege.classList.remove('hidden')
-
-    
     // founded-text
     const fountText = document.getElementById('founded-text')
     fountText.innerText = cards.length;
-
-
 
     // speener 
     const speenerContainer = document.getElementById('speener-container');
     speenerContainer.classList.remove('hidden');
     // console.log(speenerContainer);
-
-    
-    // sort 
 
     const sortFind = cards.sort((x,y)=>{
         if(x.total_view < y.total_view){
@@ -71,8 +60,6 @@ const displayCard =(cards) =>{
         }
     })
     // console.log(sortFind);
-
-    
     cards.forEach(card => {
         
         const {image_url,thumbnail_url,title,details,author,total_view,} = card;
@@ -86,8 +73,6 @@ const displayCard =(cards) =>{
         const speenerContainer = document.getElementById('speener-container');
     speenerContainer.classList.add('hidden');
          
-   
-
         cardSectionDiv.classList.add("card", "lg:card-side", "bg-white", "shadow-xl", "text-black", "lg:p-4", "mb-5" ,"w-11/12","lg:w-full","mx-auto")
         cardSectionDiv.innerHTML =`
                     <figure class="lg:w-1/4"><img src="${thumbnail_url}" alt="Movie"></figure>
@@ -127,16 +112,11 @@ const displayCard =(cards) =>{
                        </div>
                                         
                       </div>
-                    </div>
-                  
+                    </div>      
         `
         cardSection.appendChild(cardSectionDiv)
-        
     });
-    
 }
-
-
 const modal =async id =>{
     const url =`https://openapi.programming-hero.com/api/news/${id}`
     let data ={};
@@ -151,15 +131,13 @@ const modal =async id =>{
    const {name,published_date,img} = data.data[0].author;
     //   console.log( data.data[0].author);
       console.log(img);
-      
-    
+
     const modalBody =document.getElementById('modal-body');
     modalBody.textContent = "";
     modalBody.innerHTML =`
     <p class="mb-3">Author Name :${name? name  : "name not found"}</p>
     <p class="mb-3">published date :${published_date ? published_date : 'published date not found'}</p>
     <img src="${img ? img: 'image not found'}"/>
-    
     `
 }
 
